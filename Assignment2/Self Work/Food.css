@@ -1,0 +1,110 @@
+body{
+	margin:0px;
+	height: 100vh;
+
+
+}
+h1{
+	/*background-color: #C5C5C5;*/
+	text-align: center;
+	font-size: 60px;
+	font-style: italic;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+nav li {
+  display: inline-block
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 18px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+nav li a:hover {
+  background-color: #808080;
+}
+img{
+	/*margin-top: 20px;*/
+	width:500px; 
+	height:500PX
+	margin:20PX;
+	padding: 20px;
+	float:left;
+}
+.pizza{
+	float: right;
+	margin: 20px;
+	padding: 10px;
+}
+.burger{
+	float: right;
+	margin: 20px;
+	padding: 10px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.button {
+  background-color: #000;
+  color: white;
+}
+/*.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+
+   color: white;
+   text-align: center;*/
+   footer{
+    /*position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;*/
+    background: #111;
+  	margin-top: 900px;
+    width: 100vw;
+    font-family: "Open Sans";
+    
+    color: #fff;
+    
+}
+
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 20px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
