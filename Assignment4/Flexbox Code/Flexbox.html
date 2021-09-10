@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Flexbox.css">
+	<title>Flex</title>
+</head>
+<body>
+	<!--navigatio bar-->
+	<nav>
+      <ul>
+         <li class="logo">logo</li>
+         <li class="navbar-items"><a href="#">Page1</a></li>
+         <li class="navbar-items"><a href="#">Page2</a></li>
+         <li class="navbar-items"><a href="#">Page3</a></li>
+         <li class="navbar-items"><a href="#">Page4</a></li>
+         <li class="navbar-items"><a href="#">Page5</a></li>
+         <li class="navbar-items"><a href="#">Page6</a></li>
+         <li class="button"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+   </nav>
+   <script>
+      $(document).ready(function(){
+        $('.button').click(function(){
+          $('.navbar-items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+      });
+   </script>
+
+   <!--menu and paragraph-->
+	<div class="menu">
+		<h1>Menu</h1>
+		<p><em>Unique wood fired pizzas or be tempted by our pasta, antipasto, focaccias, salads and Bruschetta dishes. Relax in the friendly ambience as you enjoy the aromas of the wood ovens or sit al fresco and soak up the Mildura sunshine.</em></p>
+	</div>
+
+	<!--piza items-->
+	<div class="pizza-item1-item2">
+		<div class="pizza-item1">
+			<img src="../Images/OriginalPizza.jpg">
+			<div class="pizza-subitem">
+				<h2>Original</h2>
+				<p>Tomato sauce, mozarella, oregano</p>
+				<h3>$18.00</h3>
+				<button>ADD TO CART</button>
+			</div>
+		</div>
+		<div class="pizza-item2">
+			<img src="../Images/SalamiPizza.jpg">
+			<div class="pizza-subitem">
+				<h2>Salami</h2>
+				<p>Tomato sauce, mozarella, mild salami</p>
+				<h3>$15.00</h3>
+				<button>ADD TO CART</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="pizza-item3-item4">
+		<div class="pizza-item3">
+			<img src="../Images/ChickenPizza.jpg">
+			<div class="pizza-subitem">
+				<h2>Chicken</h2>
+				<p>Tomato sauce, mozarella,chicken, pineapple*&bbq sauce</p>
+				<h3>$25.00</h3>
+				<button>ADD TO CART</button>
+			</div>
+		</div>
+		<div class="pizza-item4">
+			<img src="../Images/HawainPizza.jpg">
+			<div class="pizza-subitem">
+				<h2>Hawain</h2>
+				<p>Tomato sauce, mozarella, ham & pineapple</p>
+				<h3>$16.00</h3>
+				<button>ADD TO CART</button>
+			</div>
+		</div>
+	</div>
+
+	<!--footer -->
+	<footer>
+		<div class="footer">
+			<p>Sample text. Click to select the text box.Click again<br>or double click to start editing the text.</p>
+		</div>
+	</footer>
+</body>
+</html>
