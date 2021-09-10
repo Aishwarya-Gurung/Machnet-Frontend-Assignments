@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 2</title>
+</head>
+<body>
+<!-- Add new row on previously present table -->
+	<table id="table">
+		<tr><td>First Row</td></tr>
+		<tr><td>Second Row</td></tr>
+	</table>
+	<script type="text/javascript">
+		function addRow(table){
+			let reference = document.getElementById('table');
+			let row = reference.insertRow(-1);
+			let cell = row.insertCell(0);
+			let text = document.createTextNode('Third Row');
+  			cell.appendChild(text);
+			
+		}
+		addRow('table');
+	</script>
+</body>
+</html>

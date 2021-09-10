@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 2</title>
+</head>
+<body>
+<!-- //two input field calculate area (l*b) on button Press  -->
+ 	<label>Length:</label>
+ 	<input class="input-field" id="length" type="number"><br><br>
+ 	<label>Breadth:</label>
+    <input class="input-field" id="breadth" type="number"><br><br>
+    <button id="btn">Calculate Area</button>
+	
+	<script type="text/javascript">
+		let calculateButton = document.getElementById("btn");
+		let l = document.getElementById("length");
+		let b = document.getElementById("breadth");
+		
+		calculateButton.addEventListener("click", calculateArea);
+		function calculateArea() {
+		  	let area = l.value * b.value;
+		  	calculateButton.replaceWith("Ares: " + area);
+		} 
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 4</title>
+</head>
+<body>
+<!-- From 3 radio button hide remaining two if one is selected -->
+	<h1>Seelect One Radio Button</h1>
+	<input type="radio" id="main-btn"><br>
+	<input type="radio" id="sub-btn" ><br>
+	<input type="radio" id="sub-btn" >
+
+	<script type="text/javascript">
+		const radioButtons = document.querySelectorAll('input[type="radio"]');
+		console.log(radioButtons);
+
+		radioButtons.forEach(function (btn) {
+  			btn.addEventListener("click", selectButton);
+		});
+
+		function selectButton() {
+ 			radioButtons.forEach(function (btn) {
+    			if (!btn.checked) {
+      				btn.style.display = "none";
+      			}
+      		});
+		}
+	</script>
+</body>
+</html>
