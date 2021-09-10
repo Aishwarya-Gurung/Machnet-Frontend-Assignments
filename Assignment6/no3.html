@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 3</title>
+</head>
+<body>
+	<script type= "text/javascript">
+	//3. Program to display:
+		//    e
+		//   cec
+		//  aceca
+		// racecar
+	    let input = 'racecar';
+	    let count = 1;
+	    const addSpace = (numberOfSpace) => {
+	    	let array = [];
+	    	for(i =1; i <= numberOfSpace; i++){
+	    		array.push(" ");
+	    	}
+	    	return array.join("");
+	    };
+	    for(let i = 4; i>=1; i--){
+	    	let answer = addSpace(i - 1) + input.substr(i - 1, count);
+	    	count += 2;
+	    	console.log(answer)
+	    }
+	</script>
+</body>
+</html>

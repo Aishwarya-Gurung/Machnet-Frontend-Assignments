@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 5</title>
+</head>
+<body>
+	<script type= "text/javascript">
+	// 5. Function that takes personalInforamtion as a single argument to return {kathmanudu: [Ram, Sita], lalitpur: [Gita]} 
+		const personalInforamtion = [
+		    { name: 'Ram', address: 'Kathmandu' },
+		    { name: 'Gita', address: 'Lalitpur' },
+		    { name: 'Sita', address: 'Kathmandu' },
+		];
+		let place=[];
+		let result={};
+		personalInforamtion.forEach((i)=>{
+		    if(!place.includes(i.address)){
+		        place.push(i.address);
+		        result[i.address] = [i.name];
+		    } 
+		    else if(place.length !== 0){
+		        result[i.address].push(i.name);
+		    }
+		});
+		console.log(result);
+	</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 8</title>
+</head>
+<body>
+	<script type= "text/javascript">
+		const details = [{
+    		name: 'Ram',
+    		pokemons: [{
+        		name: 'pikachu',
+        		color: 'yellow',
+        	},
+      		{
+        		name: 'charmendar',
+        		color: 'red',
+        	 },],
+        },
+  		{
+		    name: 'Shyam',
+		    pokemons: [{
+		        name: 'Squirtel',
+		        color: 'blue',
+		    },
+      		{
+		        name: 'charmendar',
+		        color: 'red',
+		    },
+      		{
+		        name: 'bulbasaur',
+		        color: 'green',
+		    },],
+		},
+  		{
+		    name: 'hari',
+		    pokemons: [{
+		        name: 'bulbasaur',
+		        color: 'green',
+		    },
+     		{
+		        name: 'pikachu',
+		        color: 'yellow',
+		    },],
+		},
+   		{
+		    name: 'gita',
+		    pokemons: [{
+		        name: 'bulbasaur',
+		        color: 'green',
+		    },
+      		{
+		        name: 'squirtle',
+		        color: 'blue',
+		    },],
+		},];
+		
+		const filterArray = details.filter(info => {
+			if (info.pokemons.length === 2) {
+				return info.pokemons.find(({ color }) => color === 'yellow');
+			}
+		})
+		console.log(JSON.stringify(filterArray)); 
+	</script>
+</body>
+</html>
